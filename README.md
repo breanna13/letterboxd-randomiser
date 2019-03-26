@@ -14,6 +14,6 @@ With letterboxd randomiser, randomising letterboxd lists can be done with the dr
 5. Film is output as image html
 
 <b> Errors </b>
-List must have 1 > pages
+<p>List must have 1 > pages</p>
 
 <p>Thanks to spacebruce for framework</p>
