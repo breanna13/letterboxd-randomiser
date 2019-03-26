@@ -7,3 +7,10 @@ While this is a fun and excting way to choose films and a great concept, scrolli
 With letterboxd randomiser, randomising letterboxd lists can be done with the drop of a hat. 
 
 <b>Set Up and Run</b>
+1. Modules used: bs4, random, requests, datetime
+2. Enter username exactly
+3. Enter list name exactly, spaces are written as dashes (-)
+4. Enter target .csv
+5. Film is output as image html
+
+<p>Thanks to spacebruce for fraemwork</p>
