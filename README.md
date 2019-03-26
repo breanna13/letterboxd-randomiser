@@ -13,4 +13,7 @@ With letterboxd randomiser, randomising letterboxd lists can be done with the dr
 4. Enter target .csv
 5. Film is output as image html
 
-<p>Thanks to spacebruce for fraemwork</p>
+<b> Errors </b>
+List must have 1 > pages
+
+<p>Thanks to spacebruce for framework</p>
