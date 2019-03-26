@@ -16,4 +16,4 @@ With letterboxd randomiser, randomising letterboxd lists can be done with the dr
 <b> Errors </b>
 <p>List must have 1 > pages</p>
 
-<p>Thanks to spacebruce for framework</p>
+<p>Credit to spacebruce for letterboxd access framework</p>
