@@ -14,6 +14,6 @@ With letterboxd randomiser, randomising letterboxd lists can be done with the dr
 4. Enter list name, spaces are written as dashes (-)
 5. Output as poster file
 
-Web application version of this coming soon, one hopes
+Web application version of this coming soon ☺︎
 
 <p>Credit to spacebruce for letterboxd access framework</p>
