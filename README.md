@@ -9,12 +9,11 @@ With letterboxd randomiser, randomising letterboxd lists can be done with the dr
 
 <b>Set Up and Run</b>
 1. Modules used: bs4, random, requests, datetime
-2. Enter username exactly
-3. Enter list name exactly, spaces are written as dashes (-)
-4. Enter target .csv
-5. Film is output as image html
+2. List must have 100+ films
+3. Enter username, spaces are written as underscores (_)
+4. Enter list name, spaces are written as dashes (-)
+5. Output as poster file
 
-<b> Errors </b>
-<p>List must have 1 > pages</p>
+Web application version of this coming soon, one hopes
 
 <p>Credit to spacebruce for letterboxd access framework</p>
