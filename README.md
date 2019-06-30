@@ -5,14 +5,13 @@
 
 While this is a fun and excting way to choose films and a great concept, scrolling through list pages can be tedious, and unnumbered lists can make this method nigh impossible without manually counting through rows and pages. 
 
-With letterboxd randomiser, randomising letterboxd lists can be done with the drop of a hat. 
+With letterboxd randomiser, randomising letterboxd lists can be done easily. 
 
 <b>Set Up and Run</b>
-1. Modules used: bs4, random, requests, datetime
-2. List must have 100+ films
-3. Enter username, spaces are written as underscores (_)
-4. Enter list name, spaces are written as dashes (-)
-5. Output as poster file
+1. List must have 100+ films
+2. Enter username, spaces are written as underscores (_)
+3. Enter list name, spaces are written as dashes (-)
+4. Output as poster file
 
 Web application version of this coming soon ☺︎
 
