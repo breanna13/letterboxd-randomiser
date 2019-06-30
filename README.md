@@ -1,5 +1,5 @@
 # Letterboxd Random Movie Roulette
-<center><img src="http://ajra.es/wp-content/uploads/Letterboxd_logo.png" alt="Letterboxd Banner"></center>
+<center><img src="https://a.ltrbxd.com/logos/letterboxd-logo-h-neg-rgb-1000px.png" alt="Letterboxd Banner"></center>
 <center><b>About</b> </center>
 <p><a href="https://letterboxd.com/tobiasandersen2/list/random-movie-roulette/">Random Movie Roulette</a> is a popular Letterboxd list with which a user can use <a href="random.org">RANDOM.org</a> to randomly choose a movie from a list of thousands. This creates a "roulette" of sorts.</p>
 
