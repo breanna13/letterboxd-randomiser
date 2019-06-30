@@ -13,6 +13,8 @@ With letterboxd randomiser, randomising letterboxd lists can be done easily.
 3. Enter list name, spaces are written as dashes (-)
 4. Output as poster file
 
+Made with <a href="https://github.com/pallets/flask">Flask</a>
+
 Web application version of this coming soon ☺︎
 
 <p>Credit to spacebruce for letterboxd access framework</p>
