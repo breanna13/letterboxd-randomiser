@@ -1,8 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
+		<!-- JQUERY -->
+		<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script type=text/javascript>
+			$(function() {
+			  $('a#process_input').bind('click', function() {
+				$.getJSON('/background_process', {
+				  listname: $('input[name="listname"]').val(),
+				  username: $('input[name="username"]').val(),
+				}, function(data) {
+				  $("#result").text(data.result);
+				});
+				return false;
+			  });
+			});
+		</script> -->
+	<!-- JQUERY -->
 	<title>Random Movie Roulette</title>
-	<link rel="stylesheet" href="css.css">
 </head>
 <body style="background-color: #202830; text-align:center">
 	<img src="https://a.ltrbxd.com/logos/letterboxd-logo-h-neg-rgb-1000px.png" width="450" height="90" alt="FLetterboxd">
@@ -12,13 +27,15 @@
 	{% block content %}{% endblock %}
 
 	<!-- Forms -->
-<form action = "http://localhost:5000/result" method = "POST">
+<link rel="stylesheet" href="css.css">
+<form action="{{ url_for('handle_data') }}" method="POST">
+<form>
   <div class="form-row">
     <div class="col">
-      <input type="text" class="form-control" placeholder="Username">
+      <input type="text" size=15 name=username class="form-control" placeholder="Username">
    	 </div>
    	 <div class="col">
-      <input type="text" class="form-control" placeholder="List Name">
+      <input type="text" size=15 name=listname class="form-control" placeholder="List Name">
     </div>
   </div>
   <p><input type = "submit" class="buttonclass" value = "Random!" /></p>
