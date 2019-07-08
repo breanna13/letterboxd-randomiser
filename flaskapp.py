@@ -101,6 +101,5 @@ def handle_data():
 		movieLinkString = filmsRandomString[10:-110].replace(" ", "-")
 		movieLink = 'https://letterboxd.com/film/' + movieLinkString.lower() + '/'
 		return render_template('home.html', movieLink= movieLink, films = finishedRandomString)
-port = int(os.environ.get('PORT', 5000))
 if __name__ == '__main__':
-	app.run(host='0.0.0.0', port=port)
+	app.run(debug=True, port=33507)
