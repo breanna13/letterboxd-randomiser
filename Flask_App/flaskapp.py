@@ -23,8 +23,10 @@ def home():
 @app.route("/handle_data", methods =['GET', 'POST'])
 def handle_data():
 	if request.method == 'POST':
-		userName = request.form.get('username')
-		listName = request.form.get('listname')
+		OGuserName = request.form.get('username')
+		OGlistName = request.form.get('listname')
+		userName = OGuserName.replace(" ", "_")
+		listName = OGlistName.replace(" ", "-")
 		class Page():
 			def __init__(self, url):
 				self.url = url
