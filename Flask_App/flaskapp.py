@@ -14,6 +14,9 @@ from flask import Flask, render_template, jsonify, request
 
 app = Flask(__name__)
 
+# define for IIS module registration.
+wsgi_app = app.wsgi_app
+
 @app.route("/")
 @app.route("/home")
 def home():
