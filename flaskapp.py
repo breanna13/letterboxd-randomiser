@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 from urllib import request
+import os
+from pml import app
 import random
 import requests
 import urllib
@@ -99,6 +101,6 @@ def handle_data():
 		movieLinkString = filmsRandomString[10:-110].replace(" ", "-")
 		movieLink = 'https://letterboxd.com/film/' + movieLinkString.lower() + '/'
 		return render_template('home.html', movieLink= movieLink, films = finishedRandomString)
-
+port = int(os.environ.get('PORT', 5000))
 if __name__ == '__main__':
-	app.run(debug=False)
+	app.run(host='0.0.0.0', port=port)
