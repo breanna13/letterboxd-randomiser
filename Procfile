@@ -1,1 +1,1 @@
-web: gunicorn randommovieroulette:app
+web: gunicorn flaskapp:app
