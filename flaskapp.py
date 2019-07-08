@@ -14,8 +14,6 @@ from flask import Flask, render_template, jsonify, request
 
 app = Flask(__name__)
 
-wsgi_app = app.wsgi_app
-
 @app.route("/")
 @app.route("/home")
 def home():
@@ -103,4 +101,4 @@ def handle_data():
 		return render_template('home.html', movieLink= movieLink, films = finishedRandomString)
 
 if __name__ == '__main__':
-	app.run(host = '0.0.0.0’)
+	app.run(debug=False)
