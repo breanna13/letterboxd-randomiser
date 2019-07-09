@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 from urllib import request
+import requests
 import random
 import urllib
 import time
