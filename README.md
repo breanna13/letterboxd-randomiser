@@ -12,7 +12,7 @@ With letterboxd randomiser, randomising letterboxd lists can be done easily.
 
 <b>Set Up and Run</b>
 <hr>
-1. List must have 100+ films
+1. List must have 100+ films<br>
 2. User and List names must match list URL
 
 Made with <a href="https://github.com/pallets/flask">Flask</a>
