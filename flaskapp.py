@@ -100,4 +100,4 @@ def handle_data():
 		return render_template('home.html', movieLink= movieLink, films = finishedRandomString)
 
 if __name__ == '__main__':
-	app.run()
+	app.run(debug=False)
