@@ -8,7 +8,7 @@ While this is a fun and excting way to choose films and a great concept, scrolli
 
 With letterboxd randomiser, randomising letterboxd lists can be done easily. 
 
-<center><b><a href="https://randommovieroulette.herokuapp.com">PLAY</a></b></center>
+<p><center><b><a href="https://randommovieroulette.herokuapp.com">PLAY</a></b></center></p>
 
 <b>Set Up and Run</b>
 <hr>
