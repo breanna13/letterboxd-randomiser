@@ -11,6 +11,7 @@ import json
 from flask_wtf import FlaskForm
 from bs4 import BeautifulSoup
 from flask import Flask, render_template, jsonify, request
+import app
 
 app = Flask(__name__)
 
@@ -26,7 +27,7 @@ def handle_data():
 		OGuserName = request.form.get('username')
 		OGlistName = request.form.get('listname')
 		userName = OGuserName.replace(" ", "_").lower()
-		listName = OGlistName.replace(" ", "-").lower()
+		listName = OGlistName.replace(" ", "-").replace(":", "").replace("'", "").replace(",", "").lower()
 		class Page():
 			def __init__(self, url):
 				self.url = url
@@ -96,9 +97,18 @@ def handle_data():
 		filmRandom = nameList[randomNumber]			     # variable 'films' is a random movie poster
 		filmsRandomString = str(filmRandom)
 		finishedRandomString = filmsRandomString[10:-110]
-		movieLinkString = filmsRandomString[10:-110].replace(" ", "-").replace(":", "").replace("'", "")
+		movieLinkString = filmsRandomString[10:-110].replace(" ", "-").replace(":", "").replace("'", "").replace(".", "")
 		movieLink = 'https://letterboxd.com/film/' + movieLinkString.lower() + '/'
 		return render_template('home.html', movieLink= movieLink, films = finishedRandomString)
+
+@app.errorhandler(404)
+def not_found_error(error):
+    return render_template('error.html'), 404
+
+@app.errorhandler(500)
+def internal_error(error):
+    db.session.rollback()
+    return render_template('error.html'), 500	
 
 if __name__ == '__main__':
 	app.run(debug=False)
