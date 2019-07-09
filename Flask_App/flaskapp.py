@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 from urllib import request
 import random
-import urllib
 import time
 from datetime import date
 import sys
