@@ -1,12 +1,4 @@
 gunicorn
 gevent
 flask_wtf
-urllib
-random
-time
-datetime
-sys
-re
-json
 bs4 
-flask
