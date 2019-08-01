@@ -1,6 +1,19 @@
 {% extends "layout.html" %}
 {% block content %}
 
+<script>
+	var str = "Spinning...";
+	var result = str.fontcolor("white");
+
+	$(document).ready(function(){
+		$('#loading').hide();
+  		$("button").click(function(){
+    		$("form").hide();
+    		$( "custom-block" ).replaceWith(result);
+  });
+});
+</script>
+
 <p><b><a href="{{ movieLink }}" style="color: orange"><font face = "Verdana" size = "5">{{ films }}</font></a></b></p>
 
 
