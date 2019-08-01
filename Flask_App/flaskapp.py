@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 from urllib import request
 import random
+import requests
+import urllib
 import time
 from datetime import date
 import sys
@@ -24,7 +26,8 @@ def handle_data():
 		OGuserName = request.form.get('username')
 		OGlistName = request.form.get('listname')
 		userName = OGuserName.replace(" ", "_")
-		listName = OGlistName.replace(" ", "-")
+		listName = OGlistName.lower().replace(" ", "-").replace(",", "").replace(":", "").replace("'", "").replace("?", "").replace(".", "")
+
 		class Page():
 			def __init__(self, url):
 				self.url = url
@@ -51,6 +54,7 @@ def handle_data():
 		pageList.append(firstPage)
 			
 		pageDiscovery = firstPage.soup.find(class_='paginate-pages')	# Find links in pagination section
+
 		pageDiscoveryList = pageDiscovery.find_all('a')
 			
 		# find last page number
@@ -95,7 +99,7 @@ def handle_data():
 		filmsRandomString = str(filmRandom)
 		finishedRandomString = filmsRandomString[10:-110]
 		movieLinkString = filmsRandomString[10:-110].replace(" ", "-")
-		movieLink = 'https://letterboxd.com/film/' + movieLinkString.lower() + '/'
+		movieLink = 'https://letterboxd.com/film/' + movieLinkString.lower().replace(",", "").replace(":", "").replace("'", "").replace("?", "").replace("!", "").replace("&", "") + '/'
 		return render_template('home.html', movieLink= movieLink, films = finishedRandomString)
 
 if __name__ == '__main__':
