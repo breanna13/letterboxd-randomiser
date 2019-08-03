@@ -6,7 +6,7 @@
 
 While this is a fun and excting way to choose films and a great concept, scrolling through list pages can be tedious, and unnumbered lists can make this method nigh impossible without manually counting through rows and pages. 
 
-With letterboxd randomiser, randomising letterboxd lists can be done easily. 
+With letterboxd randomiser, randomising letterboxd lists can be done easily. Deciding what to watch will take mere seconds. 
 
 <p><center><b><a href="https://randommovieroulette.herokuapp.com">PLAY</a></b></center></p>
 
