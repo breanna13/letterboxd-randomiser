@@ -1,3 +1,6 @@
+## ⚠️ Listen up y'all:
+This project is currently offline due to expired Heroku hosting. The application was previously deployed and fully functional, I swear it. But hosting services have been discontinued for now. Run it locally.
+
 # Letterboxd Random Movie Roulette
 <center><img src="https://a.ltrbxd.com/logos/letterboxd-logo-h-neg-rgb-1000px.png" alt="Letterboxd Banner"></center>
 <head><center><b>About</b> </center></head>
